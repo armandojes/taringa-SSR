@@ -1,0 +1,24 @@
+.header{
+  background: #282c34;
+}
+.header_body{
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8em;
+  color: #0fd8ff;
+}
+.logo{
+  width: 50px;
+  margin-right: 30px
+}
+@media screen and (max-width: 400px) {
+  .header_body{
+    font-size: 1.3em;
+  }
+  .logo{
+    width: 50px;
+    margin-right: 10px
+  }
+}

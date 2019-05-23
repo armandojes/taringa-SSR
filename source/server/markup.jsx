@@ -9,8 +9,10 @@ const Markup = (props) => {
         <link rel="icon" type="image/png" href="http://example.com/myicon.png" />
         <meta charSet="utf-8" />
         <base href="http://localhost:3001" />
-        <link rel="stylesheet" type="text/css" href="/public/atyle.css" />
+        <link rel="stylesheet" type="text/css" href="/public/style.css" />
         <title>server side render</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
         {/* <script dangerouslySetInnerHTML={{__html: `window.__PRELOADED__STATE__=${state}`}}></script> */}
       </head>
       <body>

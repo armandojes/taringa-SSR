@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import Header from './components/header';
+import 'reset-css';
+import './app.css';
 
 function App (props) {
   return (
-    <div>
-      <h1>Hola react js whit server side render</h1>
-    </div>
+    <Fragment>
+      <Header />
+      <div>
+        body page...
+      </div>
+    </Fragment>
   )
 }
 
