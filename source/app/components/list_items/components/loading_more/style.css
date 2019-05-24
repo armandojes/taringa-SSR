@@ -1,0 +1,9 @@
+.loading_more{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.picture{
+  width: 30px;
+}

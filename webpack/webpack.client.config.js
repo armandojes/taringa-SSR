@@ -26,7 +26,7 @@ const config = {
     ]
   },
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx', '.css']
   },
   plugins: [
     new extract({

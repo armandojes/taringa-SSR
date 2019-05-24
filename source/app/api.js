@@ -1,5 +1,5 @@
 import axios  from 'axios';
-const baseUrl = 'https://jsonplaceholder.typicode.com';
+const baseUrl = 'http://api.taringa.net';
 
 //funcion conectar
 async  function connect (config){
@@ -10,10 +10,10 @@ async  function connect (config){
 
 const api = {
   posts: {
-    get_list: async () => {
+    get_list: async (page = 1) => {
       const response = await connect({
         method: 'get',
-        url: '/posts',
+        url: `/post/populars/view/all?page=${page}`,
       });
       return response;
     },

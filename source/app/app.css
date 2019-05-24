@@ -1,6 +1,10 @@
 body{
   font-family: 'Roboto', sans-serif;
+  background: #f0f0f0;
 }
 div{
   box-sizing: border-box;
+}
+img{
+  max-width: 100%;
 }

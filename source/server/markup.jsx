@@ -17,7 +17,7 @@ const Markup = (props) => {
       </head>
       <body>
         {/* dangerouslySetInnerHTML={{__html: props.content}} */}
-        <div id="render_target" ></div>
+        <div id="render_target"></div>
         <script src="/public/app.js" />
       </body>
     </html>
