@@ -1,8 +1,6 @@
 import React from 'react';
 
 const Markup = (props) => {
-  const state = JSON.stringify(props.state);
-
   return (
     <html lang="en" dir="ltr">
       <head>
@@ -13,11 +11,10 @@ const Markup = (props) => {
         <title>server side render</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
         <meta name="viewport" content="width=device-width, user-scalable=no" />
-        {/* <script dangerouslySetInnerHTML={{__html: `window.__PRELOADED__STATE__=${state}`}}></script> */}
       </head>
       <body>
-        {/* dangerouslySetInnerHTML={{__html: props.content}} */}
-        <div id="render_target"></div>
+        <div dangerouslySetInnerHTML={{__html: props.content}} id="render_target"></div>
+        <script dangerouslySetInnerHTML={{__html: `window.__PRELOADED__STATE__=${JSON.stringify(props.preloaded_state)}`}}></script>
         <script src="/public/app.js" />
       </body>
     </html>
