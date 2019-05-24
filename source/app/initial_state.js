@@ -6,8 +6,9 @@ const initial_state = {
   },
   pages: {
     post: {
+      id: null,
       loading: false,
-      data: {},
+      data: null,
     },
     user: {
       loading: false,

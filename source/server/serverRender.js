@@ -20,7 +20,7 @@ async function serverRender (request, response) {
 
   const context = {}
   const content = await renderToStringAsync(
-    <StaticRouter context={context}>
+    <StaticRouter context={context} location={request.url}>
       <Provider store={store}>
         <App />
       </Provider>

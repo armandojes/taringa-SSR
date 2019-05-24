@@ -20,10 +20,11 @@ const api = {
     get_single: async (postd_id) => {
       const response = await connect({
         method: 'get',
-        url: `/posts/${postd_id}`,
+        url: `/post/view/${postd_id}`,
       });
       return response;
     },
   }
 }
- export default api;
+
+export default api;
